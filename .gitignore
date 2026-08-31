@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments and IDE settings
+.venv/
+.venv*/
+venv/
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Downloaded external data
+data/*
+!data/README.md
+!data/download_data.py
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+
+# Operating-system files
+.DS_Store
+Thumbs.db
