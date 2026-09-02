@@ -3,6 +3,9 @@
 > **Scope:** Educational, compressed reanalysis of public calibrated
 > Pantheon+SH0ES products; not an independent SH0ES measurement.
 
+**One-page project summary:**  
+[View the PDF](H0_project_summary.pdf)
+
 ## Overview
 
 This repository contains a progressive sequence of six notebooks on
@@ -13,23 +16,23 @@ distance products.
 The baseline analysis combines 77 calibrator rows and 277 Hubble-flow rows,
 uses the published full statistical and systematic covariance matrix, and
 adopts a third-order cosmographic distance-redshift relation. The two-parameter
-model for the Hubble constant \(H_0\) and standardized supernova absolute
-magnitude \(M_{\rm SN}\) is solved analytically with generalized least squares
+model for the Hubble constant $H_0$ and standardized supernova absolute
+magnitude $M_{\rm SN}$ is solved analytically with generalized least squares
 and cross-checked with MCMC.
 
 ## Main result
 
 The analytic baseline fit gives
 
-\[
+$$
 H_0 = 73.529 \pm 1.048\ {\rm km\,s^{-1}\,Mpc^{-1}}.
-\]
+$$
 
 The corresponding MCMC result is
 
-\[
+$$
 H_0 = 73.55^{+1.06}_{-1.03}\ {\rm km\,s^{-1}\,Mpc^{-1}}.
-\]
+$$
 
 The agreement provides an internal validation of the likelihood and sampling
 implementation.
@@ -39,21 +42,21 @@ implementation.
 - Reasonable changes to the cosmographic parameters, sample selection and
   covariance treatment leave the central value close to the baseline.
 - Replacing the cosmographic distance relation with the first-order
-  approximation \(d_L \simeq cz/H_0\) shifts \(H_0\) by
-  \(-2.955\ {\rm km\,s^{-1}\,Mpc^{-1}}\) and increases \(\chi^2\) by 32.68.
-- Ignoring off-diagonal correlations shifts \(H_0\) by only
-  \(-0.033\ {\rm km\,s^{-1}\,Mpc^{-1}}\), but reduces its reported uncertainty
+  approximation $d_L \simeq cz/H_0$ shifts $H_0$ by
+  $-2.955\ {\rm km\,s^{-1}\,Mpc^{-1}}$ and increases $\chi^2$ by 32.68.
+- Ignoring off-diagonal correlations shifts $H_0$ by only
+  $-0.033\ {\rm km\,s^{-1}\,Mpc^{-1}}$, but reduces its reported uncertainty
   by approximately 37.3%.
 - The additional-scatter extension gives a 95% upper limit of
-  \(\sigma_{\rm extra}<0.0290\) mag.
+  $\sigma_{\rm extra}<0.0290$ mag.
 
 ## Repository structure
 
 - `notebooks/`: six progressively more advanced analysis notebooks.
 - `data/`: data provenance, integrity hashes and download information.
-- `figures/`: selected report- and slide-ready figures.
-- `results/`: machine-readable result tables.
-- `report/`: source files for the technical project report.
+- `figures/`: selected scientific figures.
+- `environment.yml`: reproducible Python environment.
+- `H0_project_summary.pdf`: one-page scientific project summary.
 
 ## Notebook sequence
 
@@ -93,7 +96,7 @@ The analysis uses corrected magnitudes, Cepheid distance moduli and covariance
 matrices that have already been calibrated by Pantheon+SH0ES. It is therefore
 a pedagogical reproduction of a compressed local inference, not a
 reconstruction of the complete distance ladder and not a statistically
-independent measurement of \(H_0\).
+independent measurement of $H_0$.
 
 ## References
 
